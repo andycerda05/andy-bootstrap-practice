@@ -1,6 +1,23 @@
 // Custom variable overrides go here
 // For options, see node_modules/bootstrap/scss/_variables.scss
 // examples:
+.container {
+  a:hover {
+    text-decoration: underline;
+  }
+  a:visited {
+    text-decoration: bold;
+  }
+}
+
+.row {
+  img {
+    height: 500px;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
 // $body-bg: black;
 // $body-color: white;
 // $link-hover-color: grey;
@@ -9,4 +26,16 @@
 // Import Bootstrap styles
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+.left-column-byline {
+  font-weight: bold;
+}
+
+.left-column-source {
+  font-weight: italic;
+}
+
 // Import partials here
+.jumbotron {
+  background: url("../img/pirate-ship.jpg") no-repeat center;
+  background-size: cover;
+}
