@@ -2,14 +2,16 @@
 // For options, see node_modules/bootstrap/scss/_variables.scss
 // examples:
 .container {
-  a:hover {
-    text-decoration: underline;
-  }
-
   .jumbotron-title {
     text-align: center;
     font-family: 'Nanum Brush Script', cursive;
     color:white;
+  }
+
+  .nav-item {
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   .jumbotron-subhead {
@@ -20,7 +22,7 @@
   .img-fluid {
     max-width: 100%;
     height: auto;
-    width: 80%;
+    width: 90%;
   }
 
   .left-column-byline {
@@ -33,6 +35,10 @@
   .left-column-source {
     font-size: 0.75rem;
     font-style: italic;
+  }
+
+  .column-body {
+    margin-left: 2rem;
   }
 
   .col-md-8 {
@@ -76,6 +82,7 @@
 }
 
 .footer {
+  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
   background-color: orange;
