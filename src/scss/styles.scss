@@ -5,18 +5,57 @@
   a:hover {
     text-decoration: underline;
   }
-  a:visited {
-    text-decoration: bold;
-  }
-}
 
-.row {
-  img {
-    height: 500px;
-    width: 300px;
-    margin-bottom: 30px;
+  .jumbotron-title {
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    color:white;
   }
-}
+
+  .jumbotron-subhead {
+    text-align: center;
+    color: white;
+  }
+
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+  }
+
+  .left-column-byline {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .left-column-source {
+    font-size: 0.75rem;
+    font-style: italic;
+  }
+
+  .col-md-8 {
+    border-left: 0.1rem solid red;
+  }
+
+  .col-lg-8 {
+    border-left: 0.1rem solid red;
+  }
+
+  .right-column-title {
+    font-family: 'Nanum Brush Script', cursive;
+    margin-bottom: 0rem;
+  }
+
+  .right-column-subhead {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .right-column-text {
+    margin-bottom: 1rem;
+  }
 
 // $body-bg: black;
 // $body-color: white;
@@ -25,17 +64,22 @@
 
 // Import Bootstrap styles
 @import "../../node_modules/bootstrap/scss/bootstrap";
-
-.left-column-byline {
-  font-weight: bold;
-}
-
-.left-column-source {
-  font-weight: italic;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
 
 // Import partials here
 .jumbotron {
-  background: url("../img/pirate-ship.jpg") no-repeat center;
+  background-color: #ffffff;
+  background-image: url("../img/pirate-ship.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+}
+
+.footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: orange;
+  color: white;
+  padding-top: 0.25rem;
+}
 }
